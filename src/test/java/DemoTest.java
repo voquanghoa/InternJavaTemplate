@@ -13,4 +13,9 @@ public class DemoTest {
     public void test_sub(){
         assertEquals(new Demo().sub(8, 3), 5);
     }
+
+    @Test
+    public void test_multiple(){
+        assertEquals(new Demo().multiple(8, 3), 24);
+    }
 }
