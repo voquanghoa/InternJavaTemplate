@@ -18,4 +18,11 @@ public class DemoTest {
     public void test_multiple(){
         assertEquals(new Demo().multiple(8, 3), 24);
     }
+
+    @Test
+    public void test_max(){
+        assertEquals(new Demo().max(1, 3, 5), 5);
+        assertEquals(new Demo().max(1, 44, 5), 44);
+        assertEquals(new Demo().max(99, 6666, 5), 99);
+    }
 }
