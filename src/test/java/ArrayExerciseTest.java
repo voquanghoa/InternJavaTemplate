@@ -6,6 +6,6 @@ public class ArrayExerciseTest {
 
     @Test
     public void test_sum(){
-        assertEquals(new ArrayExercise().sum(new int[]{3,4,5}), 12);
+        assertEquals(new ArrayExercise().calculateSum(new int[]{3,4,5}), 12);
     }
 }

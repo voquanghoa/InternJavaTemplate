@@ -1,11 +1,11 @@
 public class ArrayExercise {
-    public int sum(int[] array){
-        int s = 0;
+    public int calculateSum(int[] array){
+        int sum = 0;
 
         for(int a: array){
-            s += a;
+            sum += a;
         }
 
-        return s;
+        return sum;
     }
 }
