@@ -1,3 +1,4 @@
+
 public class Barcode{
     public static boolean verify(String barcode){
 

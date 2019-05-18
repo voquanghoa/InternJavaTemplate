@@ -24,5 +24,6 @@ public class DemoTest {
         assertEquals(new Demo().max(1, 3, 5), 5);
         assertEquals(new Demo().max(1, 44, 5), 44);
         assertEquals(new Demo().max(1, 44, 2225), 2225);
+        assertEquals(new Demo().max(11111111, 44, 2225), 11111111);
     }
 }
