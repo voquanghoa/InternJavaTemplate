@@ -1,6 +1,6 @@
 
 public class Barcode{
-    public static boolean verify(String barcode){
+    public boolean verify(String barcode){
 
         int sum = 0;
 
