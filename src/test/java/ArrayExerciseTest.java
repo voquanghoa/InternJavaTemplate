@@ -28,4 +28,10 @@ public class ArrayExerciseTest {
     public void test_subArray_invalid_length(){
         new ArrayExercise().subArray(new int[]{1, 2, 3}, 1, -2);
     }
+
+    @Test
+    public void test_crazySort(){
+        int[] array = new int[]{1, 4, 3, 2, 4, 5, 8,20, 34};
+        new ArrayExercise().crazySort(array);
+    }
 }

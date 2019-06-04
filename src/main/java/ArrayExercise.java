@@ -32,4 +32,19 @@ public class ArrayExercise {
 
         return result;
     }
+
+    public void crazySort(int[] array){
+        for(int i=0;i<array.length;i++){
+            for(int j=i+1; j< array.length; j++){
+
+                if(array[i] % 2 == 0 && array[j] % 2 == 1) continue;
+                if(array[i] % 2 == 0 && array[j] % 2 == 0 && array[i] >= array[j]) continue;
+                if(array[i] % 2 == 1 && array[j] % 2 == 1 && array[i] <= array[j]) continue;
+
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+    }
 }
