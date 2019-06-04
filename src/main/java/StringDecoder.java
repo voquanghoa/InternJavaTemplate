@@ -26,4 +26,25 @@ public class StringDecoder {
         return sb.toString();
     }
 
+    public String decode2(String origin) {
+
+        StringBuilder sb = new StringBuilder();
+
+        int i =0;
+        while (i<origin.length()){
+            int count = 0;
+            char ch = origin.charAt(i);
+
+            while (++i < origin.length() && Character.isDigit(origin.charAt(i))){
+                count = 10 * count + origin.charAt(i) - '0';
+            }
+
+            for(int j=0; j< Math.max(1, count); j++){
+                sb.append(ch);
+            }
+        }
+
+        return sb.toString();
+    }
+
 }
